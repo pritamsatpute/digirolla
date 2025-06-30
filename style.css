@@ -80,7 +80,6 @@ body {
     max-width: 100%;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -545,8 +544,11 @@ ion-icon {
     pointer-events: none;
 }
 
+html.modal-open,
 body.modal-open {
-    overflow: hidden;
+    overflow-y: hidden !important;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 
