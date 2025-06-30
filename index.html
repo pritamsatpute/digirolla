@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digirolla - Digital Marketing Agency</title>
+
+  <!-- Preconnect for External Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+  <!--===> HEADER SECTION START <===-->
+  <header class="header" data-header>
+    <div class="container">
+      <!-- Overlay (optional for mobile navigation) -->
+      <div class="overlay" data-overlay></div>
+
+      <!-- Logo with Link -->
+      <a href="#">
+        <h1 class="logo">Digirolla</h1>
+      </a>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">Digirolla</a>
+
+          <!-- Close Button for Mobile Navigation -->
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <!-- Navbar List -->
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-navbar-link>About Us</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-navbar-link>Services</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-navbar-link>Blogs & News</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#project" class="navbar-link" data-navbar-link>Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Quote Button -->
+      <button class="btn btn-quote" quote-modal-open>
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+        <span>Get A Quote</span>
+      </button>
+
+      <!-- Mobile Navigation Open Button -->
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+    </div>
+  </header>
+  <!--===> HEADER SECTION END <===-->
+
+  <!--===> MAIN SECTION START <===-->
+  <main>
+    <article>
+      <!--===> QUOTE MODAL START <===-->
+      <div class="modal" quote-modal>
+        <div class="modal-content" id="quoteModalCard">
+          <h2 class="h2 modal-title underline">Request A Quote</h2>
+          <p class="section-text">
+            Ready to elevate your digital presence? Let's talk. Fill out the form and we'll get
+            back with a tailored proposal for your business.
+          </p>
+
+          <!-- Quote Form -->
+          <form id="quoteForm">
+            <div class="form-group">
+              <input type="text" name="name" class="input-field" placeholder="Your Name*" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="input-field" placeholder="Your Email*" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="project" class="input-field" placeholder="Project Type (e.g. Web Design)">
+            </div>
+            <div class="form-group">
+              <input type="text" name="budget" class="input-field"
+                placeholder="Estimated Budget (e.g. ₹75000 - ₹100,000)">
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="4" class="input-field" placeholder="Tell us about your project"
+                required></textarea>
+            </div>
+
+            <!-- Terms & Conditions Checkbox -->
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="terms_and_policy" id="terms" class="checkbox" required>
+              <label for="terms" class="label">
+                By clicking “Send Request”, you agree to our
+                <a href="#" class="label-link">Terms of Services</a> &
+                <a href="#" class="label-link">Privacy Policy</a>.
+              </label>
+            </div>
+            <button type="submit" class="btn">Send Request</button>
+          </form>
+
+          <!-- Popup Modal for Form Success -->
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <p>Form Submitted Successfully!</p>
+              <div class="ok-button">
+                <button id="okButton">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Modal Close Button -->
+        <button class="modal-close" aria-label="Close" quote-modal-close id="quoteModalCloseBtn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <!--===> QUOTE MODAL END <===-->
+
+      <!--===> HERO SECTION START <===-->
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">Where Vision Meets Execution</p>
+            <h2 class="h2 hero-title">We Craft Tomorrow's Interfaces - Today</h2>
+            <p class="hero-text">
+              At Digirolla, we create intuitive, engaging digital experiences that drive
+              results. Whether it's a strategic marketing campaign, we deliver solutions that perform.
+            </p>
+
+            <!-- Learn More Button -->
+            <button class="btn" data-modal-open>Learn More</button>
+          </div>
+
+          <!-- Hero Banner Image -->
+          <figure class="hero-banner">
+            <img src="assets/task-banner.png" class="task-hero-banner banner-animation" width="694" height="529"
+              loading="lazy" alt="task-banner">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Learn More Modal -->
+      <div class="modal" data-modal>
+        <div class="modal-content" id="dataModalCard">
+          <h2 class="h2 modal-title underline">Discover Digirolla</h2>
+          <p class="section-text">
+            We are a results-driven digital marketing agency empowering brands with cutting-edge strategies and digital
+            craftsmanship.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Who We Are</h3>
+            <p>
+              Founded in 1997, Digirolla has evolved into a powerhouse team of designers, developers,
+              and marketing strategists. With over <strong>2,189 projects</strong> and <strong>1,375 clients</strong>
+              served, we blend innovation and performance to build lasting impact.
+            </p>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Our Core Services</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Search Engine Optimization (SEO)</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Creative Content Marketing</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> UI/UX & Web Design</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Branding & Identity</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Email Campaigns & Automation</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Why Choose Us?</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="star-outline"></ion-icon> 28+ Years of Proven Experience</li>
+              <li><ion-icon name="star-outline"></ion-icon> Strategic, Data-Driven Results</li>
+              <li><ion-icon name="star-outline"></ion-icon> Transparent Communication</li>
+              <li><ion-icon name="star-outline"></ion-icon> Full-Service In-House Team</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Lean More Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-modal-close id="modalCloseBtn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <!--===> HERO SECTION END <===-->
+
+      <!--===> ABOUT SECTION START <===-->
+      <section class="section about" id="about">
+        <div class="container">
+          <!-- About Banner Image -->
+          <figure class="about-banner">
+            <img src="assets/about-banner.png" class="w-100 banner-animation" width="700" height="532" loading="lazy"
+              alt="about-banner">
+          </figure>
+          <div class="about-content">
+            <h2 class="h2 section-title underline">Why Our Agency</h2>
+            <p class="about-text">
+              Digirolla is more than a digital agency - we're a team of thinkers, designers,
+              and doers dedicated to bringing your brand vision to life. With over 28 years of industry experience,
+              we've worked with startups, enterprises, and everything in between.
+            </p>
+            <p class="about-text">
+              We blend creativity with data-driven strategy to create designs that not only look
+              great but also convert. Our success lies in your growth.
+            </p>
+            <ul class="stats-list">
+              <li class="stats-card">
+                <p class="h3 stats-title">1,375</p>
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+              <li class="stats-card">
+                <p class="h3 stats-title">2,189</p>
+                <p class="stats-text">Projects Delivered</p>
+              </li>
+              <li class="stats-card">
+                <p class="h3 stats-title">28</p>
+                <p class="stats-text">Years of Excellence</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--===> ABOUT SECTION END <===-->
+
+      <!--===> SERVICES SECTION START ===-->
+      <section class="section service" id="service">
+        <div class="container">
+          <h2 class="h2 section-title underline">Our Services</h2>
+          <p class="section-text">
+            We offer a full suite of digital marketing services tailored to meet your goals. From
+            SEO to branding, we help you grow faster, smarter, and more visibly online.
+          </p>
+          <ul class="service-list">
+            <!-- Service Card 1 -->
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img class="icon-bg" src="assets/services-banner-pattern.png" alt="Background shape" />
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <h3 class="h3 title">Search Engine Optimization</h3>
+                <p class="text">Boost your visibility on Google with our result-driven SEO strategies.</p>
+
+                <!-- Service Show More Button -->
+                <button class="card-btn" data-service="seo" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <!-- Service Card 2 -->
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img class="icon-bg" src="assets/services-banner-pattern.png" alt="Background shape" />
+                  <ion-icon name="newspaper-outline"></ion-icon>
+                </div>
+                <h3 class="h3 title">Content Marketing</h3>
+                <p class="text">Engage your audience with valuable, creative, and search-optimized content.</p>
+
+                <!-- Service Show More Button -->
+                <button class="card-btn" data-service="content" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <!-- Service Card 3 -->
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img class="icon-bg" src="assets/services-banner-pattern.png" alt="Background shape" />
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <h3 class="h3 title">Branding & Graphics Design</h3>
+                <p class="text">Shape your identity with stunning visuals and consistent branding.</p>
+
+                <!-- Service Show More Button -->
+                <button class="card-btn" data-service="branding" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <!-- Service Card 4 -->
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img class="icon-bg" src="assets/services-banner-pattern.png" alt="Background shape" />
+                  <ion-icon name="code-outline"></ion-icon>
+                </div>
+                <h3 class="h3 title">Web Development & Creative Design</h3>
+                <p class="text">From concept to launch - responsive, fast, and beautiful websites that convert.</p>
+
+                <!-- Service Show More Button -->
+                <button class="card-btn" data-service="web" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <!-- Service Card 5 -->
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img class="icon-bg" src="assets/services-banner-pattern.png" alt="Background shape" />
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <h3 class="h3 title">Email Marketing & Keyword Targeting</h3>
+                <p class="text">Send smarter emails and reach the right people with targeted campaigns.</p>
+
+                <!-- Service Show More Button -->
+                <button class="card-btn" data-service="email" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+
+            <!-- Service Card 6 -->
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img class="icon-bg" src="assets/services-banner-pattern.png" alt="Background shape" />
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                </div>
+                <h3 class="h3 title">Digital Strategy & Consulting</h3>
+                <p class="text">Make informed moves with expert insights, audits, and strategy sessions.</p>
+
+                <!-- Service Show More Button -->
+                <button class="card-btn" data-service="strategy" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Services Detail Modal -->
+      <!-- Service Modal 1 -->
+      <div class="modal" data-service-modal id="modal-seo">
+        <div class="modal-content" id="modalServiceCardSeo">
+          <h2 class="h2 modal-title underline">Search Engine Optimization</h2>
+          <p class="modal-text">
+            Our SEO experts craft tailored strategies to improve your website's visibility, rankings, and organic
+            traffic. We focus on quality content, strong backlinks, and technical health to win on search.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">What's Included</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Keyword Research</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> On-Page & Technical SEO</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Content Optimization</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Link Building</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-service-modal-close data-modal-id="seo">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Service Modal 2 -->
+      <div class="modal" data-service-modal id="modal-content">
+        <div class="modal-content" id="modalServiceCardContent">
+          <h2 class="h2 modal-title underline">Content Marketing</h2>
+          <p class="modal-text">
+            We create compelling, SEO-friendly content that informs, engages, and converts your audience. From blogs to
+            whitepapers, every word is crafted to build trust and visibility.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Content Types</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Blog Articles & eBooks</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Social Media Content</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Website Copywriting</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-service-modal-close data-modal-id="content">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Service Modal 3 -->
+      <div class="modal" data-service-modal id="modal-branding">
+        <div class="modal-content" id="modalServiceCardBranding">
+          <h2 class="h2 modal-title underline">Branding & Graphics Design</h2>
+          <p class="modal-text">
+            Elevate your brand with strong visual identity. We deliver custom logos, brand guides, and graphic assets
+            that stand out and speak clearly to your audience.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Our Creative Services</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Logo & Identity Design</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Social Media Kits</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Print & Digital Assets</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-service-modal-close data-modal-id="branding">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Service Modal 4 -->
+      <div class="modal" data-service-modal id="modal-web">
+        <div class="modal-content" id="modalServiceCardWeb">
+          <h2 class="h2 modal-title underline">Web Design & Development</h2>
+          <p class="modal-text">
+            We build modern, mobile-friendly websites that convert. From landing pages to enterprise systems, we bring
+            your ideas to life with performance and beauty in mind.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Capabilities</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> UI/UX Design</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Responsive Websites</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> CMS Integration</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Front-End & Back-End Dev</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-service-modal-close data-modal-id="web">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Service Modal 5 -->
+      <div class="modal" data-service-modal id="modal-email">
+        <div class="modal-content" id="modalServiceCardEmail">
+          <h2 class="h2 modal-title underline">Keyword Targeting & Email Marketing</h2>
+          <p class="modal-text">
+            Reach your ideal customers with targeted keywords and smart email campaigns. We help you build lists,
+            segment users, and boost ROI with automation and analytics.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">We Offer</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Email Funnel Automation</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> A/B Testing & Segmentation</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> List Building & CRM Integration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-service-modal-close data-modal-id="email">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Service Modal 6 -->
+      <div class="modal" data-service-modal id="modal-strategy">
+        <div class="modal-content" id="modalServiceCardStrategy">
+          <h2 class="h2 modal-title underline">Digital Strategy & Consulting</h2>
+          <p class="modal-text">
+            Let's plan your digital success. From growth strategies to campaign audits, we provide expert guidance
+            backed by data to make informed decisions.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Consulting Services</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Marketing Strategy Development</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Data Analytics & Reporting</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Funnel Optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-service-modal-close data-modal-id="strategy">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <!--===> SERVICES SECTION END ===-->
+
+
+      <!--===> BLOGS & NEWS SECTION START <===-->
+      <section class="section blog" id="blog">
+        <div class="container">
+          <h2 class="h2 section-title underline">Blogs & News</h2>
+          <p class="section-text">
+            The latest insights and digital marketing trends - curated by our team to help you stay sharp and grow
+            smart.
+          </p>
+
+          <ul class="blog-list">
+            <!-- Blog Card 1 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/blog-1.jpg" alt="Blog banner 1" class="w-100 img-cover"
+                    width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">Why SEO is Still the #1 Growth Hack</a></h3>
+                <p class="text">Explore why search engine optimization remains the most powerful strategy in 2025.</p>
+
+                <!-- Blog Read More Button -->
+                <button class="btn btn-blog-news" data-blog="1">Read More</button>
+              </div>
+            </li>
+
+            <!-- Blog Card 2 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/blog-2.jpg" alt="Blog banner 2" class="w-100 img-cover"
+                    width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">Top 5 UI/UX Mistakes to Avoid</a></h3>
+                <p class="text">Avoid these common design errors that frustrate users and kill conversions.</p>
+
+                <!-- Blog Read More Button -->
+                <button class="btn btn-blog-news" data-blog="2">Read More</button>
+              </div>
+            </li>
+
+            <!-- Blog Card 3 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/blog-3.jpg" alt="Blog banner 3" class="w-100 img-cover"
+                    width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">AI in Digital Marketing</a></h3>
+                <p class="text">How AI is transforming the way brands plan, create, and deliver campaigns.</p>
+
+                <!-- Blog Read More Button -->
+                <button class="btn btn-blog-news" data-blog="3">Read More</button>
+              </div>
+            </li>
+
+            <!-- Blog Card 4 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/blog-4.jpg" alt="Blog banner 4" class="w-100 img-cover"
+                    width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">Design Thinking for Agencies</a></h3>
+                <p class="text">Learn how to use design thinking to solve marketing challenges creatively.</p>
+
+                <!-- Blog Read More Button -->
+                <button class="btn btn-blog-news" data-blog="4">Read More</button>
+              </div>
+            </li>
+
+            <!-- News Card 1 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/news-1.jpg" alt="News banner 1" class="w-100 img-cover"
+                    width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">AI Regulation in Digital Advertising (2025)</a></h3>
+                <p class="text">New transparency laws are reshaping how AI can be used in marketing campaigns.</p>
+
+                <!-- News Read More Button -->
+                <button class="btn btn-blog-news" data-news="1">Read More</button>
+              </div>
+            </li>
+
+            <!-- News Card 2 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/news-2.jpg" alt="News banner 2" class="w-100 img-cover"
+                    width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">NextEdge Launches New Design Sprint Studio</a></h3>
+                <p class="text">From idea to prototype in 5 days - our new studio delivers innovation fast.</p>
+
+                <!-- News Read More Button -->
+                <button class="btn btn-blog-news" data-news="2">Read More</button>
+              </div>
+            </li>
+
+            <!-- News Card 3 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/news-3.jpg"
+                    alt="Google's update prioritizes authority and semantics" class="w-100 img-cover" width="500"
+                    height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">Google Algorithm Update Shakes Up Search Rankings</a></h3>
+                <p class="text">SEO pros react as Google's “Magnet” update prioritizes authority and semantics.</p>
+
+                <!-- News Read More Button -->
+                <button class="btn btn-blog-news" data-news="3">Read More</button>
+              </div>
+            </li>
+
+            <!-- News Card 4 -->
+            <li class="blog-card">
+              <div class="banner">
+                <a href="#"><img src="assets/news-4.jpg" alt="UX strategies and secure interactions"
+                    class="w-100 img-cover" width="500" height="300"></a>
+              </div>
+              <div class="content">
+                <h3 class="title"><a href="#">Web3's Role in Modern Digital Experiences</a></h3>
+                <p class="text">Web3 tools are quietly powering new UX strategies and secure interactions.</p>
+
+                <!-- News Read More Button -->
+                <button class="btn btn-blog-news" data-news="4">Read More</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Blogs & News Modals -->
+      <!-- Blog Modal 1 -->
+      <div class="modal blog-modal" data-blog-modal id="modal-blog-1">
+        <div class="modal-content" id="modalBlogCard1">
+          <h2 class="h2 modal-title underline">Why SEO is Still the #1 Growth Hack</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/blog-modal-1.jpg" alt="SEO traffic growth" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Search Engine Optimization (SEO) is not just another marketing tactic - it's the foundation of sustainable
+            digital growth. Even in 2025, amidst AI-driven ads and short-form content chaos, SEO continues to drive
+            targeted, compounding results without ongoing spend per click.</p>
+
+          <h3>What Makes SEO So Resilient?</h3>
+          <p>Organic search is driven by user intent. People search because they have problems to solve - SEO helps
+            position your business as the solution. Done right, SEO builds trust, authority, and traffic that lasts for
+            months or years.</p>
+
+          <!-- Image 2 -->
+          <img src="assets/blog-modal-2.jpg" alt="Mobile SEO results" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>Modern SEO ≠ Just Keywords</h3>
+          <p>SEO has evolved dramatically. Today it includes:</p>
+          <ul class="modal-list">
+            <li><ion-icon name="checkmark-outline"></ion-icon> Semantic search and search intent alignment</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon> Core Web Vitals and mobile performance</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon> Structured data and schema markup</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon> E-E-A-T (Experience, Expertise, Authoritativeness,
+              Trustworthiness)</li>
+          </ul>
+
+          <!-- Image 3 -->
+          <img src="assets/blog-modal-3.jpg" alt="SEO content strategy planning" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>SEO is Future-Proof</h3>
+          <p>While platforms change constantly (TikTok today, maybe something else tomorrow), people will always search.
+            And search engines - increasingly powered by AI - will reward relevant, high-quality content.</p>
+
+          <blockquote>
+            <p><em>"Good SEO is invisible - the user just finds exactly what they need."</em></p>
+          </blockquote>
+
+          <h3>Our SEO Philosophy at Digirolla</h3>
+          <p>We take a holistic approach: technical health, content strategy, authority building, and UX. No shortcuts.
+            No gimmicks. Just results that scale.</p>
+
+          <!-- Image 4 -->
+          <img src="assets/blog-modal-4.jpg" alt="NextEdge SEO strategy team" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Invest in SEO once, reap results over time. That's the true growth hack - and why it remains the #1 digital
+            investment year after year.</p>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-blog-modal-close data-modal-id="1">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Blog Modal 2 -->
+      <div class="modal blog-modal" data-blog-modal id="modal-blog-2">
+        <div class="modal-content" id="modalBlogCard2">
+          <h2 class="h2 modal-title underline">Top 5 UI/UX Mistakes to Avoid</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/blog-modal-5.jpg" alt="Common UX mistakes illustration" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>User Interface and User Experience design (UI/UX) aren't just about aesthetics - they're about function.
+            And when UX fails, conversions drop, trust erodes, and users churn fast.</p>
+
+          <h3>1. Poor Mobile Experience</h3>
+          <p>Mobile now accounts for over 65% of all web traffic. If your site isn't responsive, you're alienating a
+            majority of users. Think thumb-friendly tap zones, simplified navigation, and collapsible content sections.
+          </p>
+
+          <!-- Image 2 -->
+          <img src="assets/blog-modal-6.jpg" alt="Mobile responsive UX example" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>2. Sluggish Load Times</h3>
+          <p>Speed is usability. Compress media, lazy-load scripts, and prioritize key rendering paths. Every second of
+            delay costs you engagement.</p>
+
+          <h3>3. Inconsistent Design Patterns</h3>
+          <p>If buttons behave differently across pages, or form elements vary in size or style, users lose confidence.
+            Consistency breeds clarity.</p>
+
+          <!-- Image 3 -->
+          <img src="assets/blog-modal-7.jpg" alt="Button design consistency" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>4. Unclear CTAs</h3>
+          <p>Users don't want to guess what happens next. "Submit" is vague - “Get My Free Audit” is clear. Guide the
+            journey, don't obscure it.</p>
+
+          <h3>5. Forgetting Accessibility</h3>
+          <p>Alt text, color contrast, keyboard nav - these aren't nice-to-haves. They're essentials. Inclusive design
+            improves UX for everyone.</p>
+
+          <!-- Image 4 -->
+          <img src="assets/blog-modal-8.jpg" alt="Wireframing UX decisions" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>At Digirolla, we test everything - and iterate based on data, not assumptions. Want happier users?
+            Start with fewer mistakes.</p>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-blog-modal-close data-modal-id="2">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Blog Modal 3 -->
+      <div class="modal blog-modal" data-blog-modal id="modal-blog-3">
+        <div class="modal-content" id="modalBlogCard3">
+          <h2 class="h2 modal-title underline">AI in Digital Marketing</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/blog-modal-9.jpg" alt="AI marketing dashboard" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>AI is not the future - it's the present. From audience targeting to content creation, digital marketing
+            powered by artificial intelligence is more agile, efficient, and personalized than ever.</p>
+
+          <h3>Where AI Is Making the Biggest Impact</h3>
+          <ul class="modal-list">
+            <li><ion-icon name="rocket-outline"></ion-icon> Content generation with ChatGPT & Jasper</li>
+            <li><ion-icon name="people-outline"></ion-icon> Predictive segmentation based on behavior</li>
+            <li><ion-icon name="color-wand-outline"></ion-icon> Automated design with tools like Midjourney</li>
+            <li><ion-icon name="megaphone-outline"></ion-icon> Ad optimization via Google Performance Max</li>
+          </ul>
+
+          <!-- Image 2 -->
+          <img src="assets/blog-modal-10.jpg" alt="AI-based customer segmentation" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>AI Doesn't Replace Marketers - It Empowers Them</h3>
+          <p>AI saves time, analyzes faster, and personalizes at scale. But it can't replace brand strategy, emotional
+            resonance, or human storytelling. Combine both to win.</p>
+
+          <h3>Ethical AI Use</h3>
+          <p>We follow transparency guidelines in content generation. AI should inform, not manipulate. Attribution and
+            bias audits matter more than ever.</p>
+
+          <!-- Image 3 -->
+          <img src="assets/blog-modal-11.jpg" alt="AI in ad copy testing" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>Our AI Stack at NextEdge</h3>
+          <p>We use Surfer, Jasper, Semrush, and ChatGPT in research and optimization - but every campaign is reviewed
+            by humans who understand your voice and audience.</p>
+
+          <!-- Image 4 -->
+          <img src="assets/blog-modal-12.jpg" alt="AI voice personalization" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>AI is here to stay. Use it right - and you gain a serious edge.</p>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-blog-modal-close data-modal-id="3">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Blog Modal 4 -->
+      <div class="modal blog-modal" data-blog-modal id="modal-blog-4">
+        <div class="modal-content" id="modalBlogCard4">
+          <h2 class="h2 modal-title underline">Design Thinking for Agencies</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/blog-modal-13.jpg" alt="Design thinking whiteboard planning"
+            class="img-cover" style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Design thinking is more than a buzzword - it's a proven problem-solving framework that helps agencies build
+            better, smarter, and more empathetic products. It turns ideas into validated experiences that solve real
+            user problems.</p>
+
+          <h3>The 5 Phases of Design Thinking</h3>
+          <ol class="modal-list numbered">
+            <li>Empathize - Understand user needs through interviews and observation</li>
+            <li>Define - Synthesize insights into actionable problem statements</li>
+            <li>Ideate - Brainstorm freely with no judgment or constraint</li>
+            <li>Prototype - Rapidly build testable versions of a solution</li>
+            <li>Test - Gather feedback and iterate continuously</li>
+          </ol>
+
+          <!-- Image 2 -->
+          <img src="assets/blog-modal-14.jpg" alt="Team ideation session" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>Why Agencies Should Care</h3>
+          <p>Design thinking minimizes risk. Instead of launching full products blindly, you test early and often. It
+            fosters collaboration across departments and keeps the user front and center.</p>
+
+          <!-- Image 3 -->
+          <img src="assets/blog-modal-15.jpg" alt="Design sprint sticky notes" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <h3>NextEdge's Design Thinking in Action</h3>
+          <p>We've used this framework to guide SaaS UI builds, campaign journeys, and even client onboarding systems.
+            Our team leads design sprints with real users, not just stakeholder assumptions.</p>
+
+          <!-- Image 4 -->
+          <img src="assets/blog-modal-16.jpg" alt="Usability testing session" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Design thinking turns abstract goals into practical outcomes. Empathy is no longer a soft skill - it's your
+            most strategic advantage.</p>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-blog-modal-close data-modal-id="4">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- News Modal 1 -->
+      <div class="modal news-modal" data-news-modal id="modal-news-1">
+        <div class="modal-content" id="modalNewsCard1">
+          <h2 class="h2 modal-title underline">AI Regulation in Digital Advertising (2025 Update)</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/news-modal-1.jpg" alt="AI regulation concept" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>As artificial intelligence continues to play a central role in targeting and automating ad campaigns,
+            regulators worldwide are responding with sweeping changes. In early 2025, the European Union and the United
+            States introduced synchronized AI transparency standards for advertisers and platforms.</p>
+
+          <h3>What's Changing in 2025</h3>
+          <ul class="modal-list">
+            <li><ion-icon name="document-outline"></ion-icon> Platforms must disclose if AI was used in targeting or
+              content generation.</li>
+            <li><ion-icon name="alert-circle-outline"></ion-icon> Users must be notified when interacting with
+              AI-generated ads or chat interfaces.</li>
+            <li><ion-icon name="lock-closed-outline"></ion-icon> Personalization models must meet new consent and
+              privacy thresholds.</li>
+          </ul>
+
+          <h3>How It Impacts Marketers</h3>
+          <p>Brands and agencies must now document the role of AI across campaigns. AdTech platforms like Meta, Google,
+            and TikTok have already updated dashboards with “AI audit trails” showing what content or placement was
+            optimized algorithmically.</p>
+
+          <!-- Image 2 -->
+          <img src="assets/news-modal-2.jpg" alt="AI audit trail dashboard" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <blockquote>
+            <p><em>“Transparency builds trust. Audiences want to know when they're being targeted by a machine - and
+                why.”</em></p>
+          </blockquote>
+
+          <p>At <strong>Digirolla</strong>, we're guiding clients through compliance while keeping performance at
+            the forefront. Our AI-assisted strategies now come with built-in reporting on usage, ethics, and fairness.
+          </p>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-news-modal-close data-modal-id="1">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- News Modal 2 -->
+      <div class="modal news-modal" data-news-modal id="modal-news-2">
+        <div class="modal-content" id="modalNewsCard2">
+          <h2 class="h2 modal-title underline">NextEdge Launches New Design Sprint Studio</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/news-modal-3.jpg" alt="Team design sprint workshop" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Digirolla has officially launched its in-house Design Sprint Studio, a rapid ideation and
+            prototyping space for clients tackling big challenges. Located in our new creative hub, the studio is built
+            to bring stakeholders, users, and strategists together in accelerated workshops that turn ideas into
+            testable prototypes in just 5 days.</p>
+
+          <h3>What Makes It Different?</h3>
+          <ul class="modal-list">
+            <li><ion-icon name="flash-outline"></ion-icon> Speed: From idea to prototype in less than a week</li>
+            <li><ion-icon name="people-outline"></ion-icon> Collaboration: Cross-functional teams co-creating with users
+            </li>
+            <li><ion-icon name="analytics-outline"></ion-icon> Validation: Usability-tested outcomes to inform dev
+              investment</li>
+          </ul>
+
+          <p>Design sprints have been used by Google, Airbnb, and Slack - now NextEdge brings the method in-house with
+            UX pros, business analysts, and AI-assisted mapping tools.</p>
+
+          <!-- Image 2 -->
+          <img src="assets/news-modal-4.jpg" alt="Sticky note design sprint wall" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <blockquote>
+            <p><em>“This isn't brainstorming - it's decision-making with speed and purpose.”</em></p>
+          </blockquote>
+
+          <p>Clients interested in a design sprint can now book a discovery session directly on the Digirolla
+            site.</p>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-news-modal-close data-modal-id="2">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- News Modal 3 -->
+      <div class="modal news-modal" data-news-modal id="modal-news-3">
+        <div class="modal-content" id="modalNewsCard3">
+          <h2 class="h2 modal-title underline">Google Algorithm Update Shakes Up Search Rankings</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/news-modal-5.jpg" alt="Google algorithm update concept" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Google rolled out its first major algorithm update of 2025 this month, and early data shows a major shift
+            in how topical authority and structured data impact rankings. The update, dubbed “Magnet,” favors deep
+            content clusters and E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) signals more than
+            ever before.</p>
+
+          <h3>Key Observations:</h3>
+          <ul class="modal-list">
+            <li><ion-icon name="trending-up-outline"></ion-icon> Sites with high author credibility gained visibility
+            </li>
+            <li><ion-icon name="alert-outline"></ion-icon> Thin content with keyword stuffing saw major drops</li>
+            <li><ion-icon name="code-slash-outline"></ion-icon> Pages with schema markup saw faster re-indexing</li>
+          </ul>
+
+          <!-- Image 2 -->
+          <img src="assets/news-modal-6.jpg" alt="SEO traffic graph after update" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>NextEdge clients using our Content Authority Maps and internal linking strategies have remained stable -
+            and in some niches, improved rankings.</p>
+
+          <blockquote>
+            <p><em>“You can't trick Google anymore. You have to serve the user - that's the only trick left.”</em></p>
+          </blockquote>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-news-modal-close data-modal-id="3">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- News Modal 4 -->
+      <div class="modal news-modal" data-news-modal id="modal-news-4">
+        <div class="modal-content" id="modalNewsCard4">
+          <h2 class="h2 modal-title underline">Web3's Role in Modern Digital Experiences</h2>
+
+          <!-- Image 1 -->
+          <img src="assets/news-modal-7.jpg" alt="Web3 digital interaction concept" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Though Web3 isn't dominating headlines like in 2021, it's quietly becoming the infrastructure behind
+            smarter, safer, and more personal digital experiences. From identity verification to transparent ad
+            attribution, Web3 tools are integrating into mainstream platforms.</p>
+
+          <h3>Where It's Showing Up:</h3>
+          <ul class="modal-list">
+            <li><ion-icon name="wallet-outline"></ion-icon> Decentralized identity sign-ins for social platforms</li>
+            <li><ion-icon name="shield-checkmark-outline"></ion-icon> Blockchain-verified product reviews</li>
+            <li><ion-icon name="eye-outline"></ion-icon> NFT-style memberships for loyalty programs</li>
+          </ul>
+
+          <!-- Image 2 -->
+          <img src="assets/news-modal-8.jpg" alt="Web3 UX example" class="img-cover"
+            style="border-radius: 12px; margin: 20px 0;" />
+
+          <p>Digirolla is prototyping Web3 UX interfaces for event access, brand interaction, and ad targeting
+            that respects user-owned data.</p>
+
+          <blockquote>
+            <p><em>“Web3 isn't replacing the web - it's redefining who owns and shapes it.”</em></p>
+          </blockquote>
+        </div>
+
+        <!-- Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-news-modal-close data-modal-id="4">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <!--===> BLOGS & NEWS SECTION END <===-->
+
+      <!--===> PROJECT SECTION START <===-->
+      <section class="section project" id="project">
+        <div class="container">
+          <h2 class="h2 section-title underline">Our Recent Projects</h2>
+          <p class="section-text">Here's a look at the work we've proudly delivered. Each project reflects our
+            commitment to quality, creativity, and measurable results.</p>
+          <ul class="project-list">
+
+            <!-- Project Card 1 -->
+            <li>
+              <div class="project-card">
+
+                <!-- Project Banner Image 1 -->
+                <figure class="banner">
+                  <img src="assets/project-1.jpg" class="img-cover" width="520" height="700" loading="lazy"
+                    alt="Designing a better cinema experience">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">SEO Optimization</p>
+                  <h3 class="h3"><a class="card-title">Designing a better cinema experience</a></h3>
+
+                  <!-- View Details Button -->
+                  <button class="btn btn-project project-modal-btn" data-project="1">View Details</button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project Card 2 -->
+            <li>
+              <div class="project-card">
+
+                <!-- Project Banner Image 2 -->
+                <figure class="banner">
+                  <img src="assets/project-2.jpg" width="510" height="700" loading="lazy"
+                    alt="Building design process within teams" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Digital Marketing</p>
+                  <h3 class="h3">
+                    <a class="card-title">Building design process within teams</a>
+                  </h3>
+
+                  <!-- View Details Button -->
+                  <button class="btn btn-project project-modal-btn" data-project="2">View Details</button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project Card 3 -->
+            <li>
+              <div class="project-card">
+
+                <!-- Project Banner Image 3 -->
+                <figure class="banner">
+                  <img src="assets/project-3.jpg" width="510" height="700" loading="lazy"
+                    alt="How intercom brings play into their design process" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Keyword Targeting</p>
+                  <h3 class="h3">
+                    <a class="card-title">How intercom brings play into their design process</a>
+                  </h3>
+
+                  <!-- View Details Button -->
+                  <button class="btn btn-project project-modal-btn" data-project="3">View Details</button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project Card 4 -->
+            <li>
+              <div class="project-card">
+
+                <!-- Project Banner Image 4 -->
+                <figure class="banner">
+                  <img src="assets/project-4.jpg" width="510" height="700" loading="lazy"
+                    alt="Stuck with to-do list, I created a new app for" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Email Marketing</p>
+                  <h3 class="h3">
+                    <a class="card-title">Stuck with to-do list, I created a new app for</a>
+                  </h3>
+
+                  <!-- View Details Button -->
+                  <button class="btn btn-project project-modal-btn" data-project="4">View Details</button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project Card 5 -->
+            <li>
+              <div class="project-card">
+
+                <!-- Project Banner Image 5 -->
+                <figure class="banner">
+                  <img src="assets/project-5.jpg" width="510" height="700" loading="lazy"
+                    alt="Examples of different types of sprints" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Marketing & Reporting</p>
+                  <h3 class="h3">
+                    <a class="card-title">Examples of different types of sprints</a>
+                  </h3>
+
+                  <!-- View Details Button -->
+                  <button class="btn btn-project project-modal-btn" data-project="5">View Details</button>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project Card 6 -->
+            <li>
+              <div class="project-card">
+
+                <!-- Project Banner Image 6 -->
+                <figure class="banner">
+                  <img src="assets/project-6.jpg" width="510" height="700" loading="lazy"
+                    alt="Redesigning the New York times app" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Development</p>
+                  <h3 class="h3">
+                    <a class="card-title">Redesigning the New York times app</a>
+                  </h3>
+
+                  <!-- View Details Button -->
+                  <button class="btn btn-project project-modal-btn" data-project="6">View Details</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Project Modals -->
+      <!-- Project Modal 1 -->
+      <div class="modal" data-project-modal id="modal-project-1">
+        <div class="modal-content" id="modalProjectCard1">
+          <h2 class="h2 modal-title underline">Designing a Better Cinema Experience</h2>
+          <p class="section-text">
+            A user-focused redesign of a cinema booking app that prioritized clarity, speed, and visual delight. We
+            reimagined the user flow for faster ticket booking and richer engagement.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Project Highlights</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Interactive seat map UI</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Real-time showtime updates</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Optimized booking funnel</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Services Used</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="color-palette-outline"></ion-icon> UI/UX Design</li>
+              <li><ion-icon name="code-outline"></ion-icon> Front-End Development</li>
+              <li><ion-icon name="search-outline"></ion-icon> SEO Optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-project-modal-close data-modal-id="1">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Project Modal 2 -->
+      <div class="modal" data-project-modal id="modal-project-2">
+        <div class="modal-content" id="modalProjectCard2">
+          <h2 class="h2 modal-title underline">Building Design Process Within Teams</h2>
+          <p class="section-text">
+            A collaborative design system for a SaaS team - we built a design language and tools to improve consistency,
+            speed, and cross-functional collaboration.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Project Highlights</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Custom component library</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Shared brand design tokens</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Developer-friendly documentation</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Services Used</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="brush-outline"></ion-icon> Design Systems</li>
+              <li><ion-icon name="code-slash-outline"></ion-icon> Front-End Dev Support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-project-modal-close data-modal-id="2">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Project Modal 3 -->
+      <div class="modal" data-project-modal id="modal-project-3">
+        <div class="modal-content" id="modalProjectCard3">
+          <h2 class="h2 modal-title underline">How Intercom Brings Play into Their Design Process</h2>
+          <p class="section-text">
+            A case study and design experiment exploring how play and creativity improved user engagement for an
+            enterprise messaging platform.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Project Highlights</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Interactive onboarding flow</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Playful illustrations & animation</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> User feedback & testing loops</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Services Used</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="happy-outline"></ion-icon> UI Animation</li>
+              <li><ion-icon name="desktop-outline"></ion-icon> UX Strategy</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-project-modal-close data-modal-id="3">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Project Modal 4 -->
+      <div class="modal" data-project-modal id="modal-project-4">
+        <div class="modal-content" id="modalProjectCard4">
+          <h2 class="h2 modal-title underline">Stuck with To-Do List, I Created a New App</h2>
+          <p class="section-text">
+            A minimal productivity app born from real-life frustration. We focused on clarity, speed, and human-centered
+            design to make managing tasks joyful again.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Project Highlights</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Smart task prioritization</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Calendar + list hybrid UI</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Sync across devices</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Services Used</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="code-outline"></ion-icon> Full-stack Development</li>
+              <li><ion-icon name="cloud-upload-outline"></ion-icon> Cloud Sync Integration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-project-modal-close data-modal-id="4">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Project Modal 5 -->
+      <div class="modal" data-project-modal id="modal-project-5">
+        <div class="modal-content" id="modalProjectCard5">
+          <h2 class="h2 modal-title underline">Examples of Different Types of Sprints</h2>
+          <p class="section-text">
+            A visual guide for teams exploring Agile sprint formats. We built an interactive toolkit to help teams
+            choose the right sprint for any project.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Project Highlights</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Sprint type selector tool</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Process diagrams & case studies</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Analytics dashboard</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Services Used</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="stats-chart-outline"></ion-icon> UX Research</li>
+              <li><ion-icon name="construct-outline"></ion-icon> Prototyping</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-project-modal-close data-modal-id="5">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Project Modal 6 -->
+      <div class="modal" data-project-modal id="modal-project-6">
+        <div class="modal-content" id="modalProjectCard6">
+          <h2 class="h2 modal-title underline">Redesigning The New York Times App</h2>
+          <p class="section-text">
+            We partnered with a global publishing brand to reimagine their mobile experience. The goal: make reading
+            smoother, loading faster, and discovery more delightful.
+          </p>
+          <div class="modal-section">
+            <h3 class="h3">Project Highlights</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Personalized article feeds</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Performance-optimized UI</li>
+              <li><ion-icon name="checkmark-circle-outline"></ion-icon> Offline reading mode</li>
+            </ul>
+          </div>
+          <div class="modal-section">
+            <h3 class="h3">Services Used</h3>
+            <ul class="modal-list">
+              <li><ion-icon name="newspaper-outline"></ion-icon> App UX Design</li>
+              <li><ion-icon name="code-outline"></ion-icon> Mobile Development</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project Modal Close Button -->
+        <button class="modal-close" aria-label="Close" data-project-modal-close data-modal-id="6">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <!--===> PROJECT SECTION END <===-->
+
+    </article>
+  </main>
+  <!--===> MAIN SECTION END <===-->
+
+  <!--===> FOOTER SECTION START <===-->
+  <footer class="footer">
+    <div class="footer-top top-section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Digirolla</a>
+          <p class="text">Digirolla is your full-service digital partner helping brands grow with purpose,
+            design, and strategy.</p>
+
+          <!-- Footer Social List -->
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Quick Links -->
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+          <li>
+            <a href="#home" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+          <li>
+            <a href="#service" class="footer-link">Services</a>
+          </li>
+          <li>
+            <a href="#blog" class="footer-link">Blogs & News</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer-link">Portfolio</a>
+          </li>
+        </ul>
+
+        <!-- Footer Services List -->
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Search Engine Optimization</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Content Marketing</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Branding & Graphics Design</a>
+          </li>
+        </ul>
+
+        <!-- Footer Other Links -->
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Other Links</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+        </ul>
+
+        <!-- Footer Enquiry List -->
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">For Enquiry</p>
+          </li>
+          <li class="footer-item">
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+            <div>
+              <a href="tel:+911234567890" class="footer-item-link">+91 12345 67890</a>
+              <a href="tel:+912345678901" class="footer-item-link">+91 2345 678901</a>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+            <div>
+              <a href="mailto:info@nextedgedigital.com" class="footer-item-link">info@nextedgedigital.com</a>
+            </div>
+          </li>
+          <li class="footer-item">
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+            <div>
+              <address class="footer-item-link">Nagpur, Maharashtra, India</address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 1997-2025 |
+        <a href="#" class="copyright-link">Digirolla</a> - All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <!--===> FOOTER SECTION END <===-->
+
+  <!-- Go To Top Button -->
+  <a href="#top" class="go-top" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <!-- Attached Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
+
