@@ -6,16 +6,15 @@ A full-stack website developed as part of an internship project at **Next24tech 
 
 ## Table of Contents
 
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Tech Stack](#️-tech-stack)
-- [Authentication](#-authentication)
-- [Installation](#-installation)
-- [Running the Project](#-running-the-project)
-- [API Endpoints](#-api-endpoints)
-- [Folder Structure](#️-folder-structure)
-- [Screenshots](#-screenshots)
-- [License](#-license)
+- [Features]
+- [Project Structure]
+- [Tech Stack]
+- [Authentication]
+- [Installation]
+- [Running the Project]
+- [Folder Structure]
+- [Screenshots]
+- [License]
 
 ---
 
