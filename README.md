@@ -92,6 +92,8 @@ cd backend
 node server.js
 ```
 
+---
+
 ## Folder Structure
 
 ### Backend
@@ -115,12 +117,13 @@ Digirolla/
 └── script.js
 
 ```
+---
 
 ## Screenshots
 
 Below are screenshots of the **Digirolla** in action:
 
-### HOME SECTION
+#### HOME SECTION
 ![homepage-section](https://github.com/user-attachments/assets/53b7ecb9-c891-49f5-aeac-b615338e1fac)
 
 ### ABOUT SECTION
@@ -140,6 +143,8 @@ Below are screenshots of the **Digirolla** in action:
 
 ### FOOTER SECTION
 ![footer-section](https://github.com/user-attachments/assets/79c3a85d-6901-4fa0-9a7e-f5925ec8268e)
+
+---
 
 ## License
 
