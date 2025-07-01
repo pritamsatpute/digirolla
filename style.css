@@ -72,12 +72,7 @@ body {
     background-color: var(--white);
     color: var(--purple-navy);
     font-size: 1.6rem;
-}
-
-html,
-body {
     overflow-x: hidden;
-    max-width: 100%;
 }
 
 a {
@@ -548,7 +543,7 @@ html.modal-open,
 body.modal-open {
     overflow-y: hidden !important;
     overflow-x: hidden;
-    height: 100vh;
+
 }
 
 
@@ -809,11 +804,6 @@ textarea:focus {
 .about-text {
     font-size: var(--fs-8);
     margin-block-end: 20px;
-}
-
-.stats-list {
-    display: grid;
-    gap: 30px;
 }
 
 .stats-card {
@@ -1252,6 +1242,11 @@ textarea:focus {
         max-width: 720px;
     }
 
+    .stats-list {
+        display: grid;
+        gap: 30px;
+    }
+
     .about .container,
     .service .container,
     .blog .container,
@@ -1291,6 +1286,11 @@ textarea:focus {
 
     .container {
         max-width: 950px;
+    }
+
+    .stats-list {
+        display: grid;
+        gap: 30px;
     }
 
     .project-list {
@@ -1404,3 +1404,6 @@ textarea:focus {
         grid-column: auto;
     }
 }
+
+
+
