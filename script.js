@@ -29,6 +29,15 @@ elemArr.forEach(elem => {
   elem.addEventListener("click", function () {
     navbar.classList.toggle("active");
     overlay.classList.toggle("active");
+
+    // Toggle the body's scroll behavior when the navbar is active
+    if (navbar.classList.contains("active")) {
+      // Disable body scroll when navbar is open
+      document.body.style.overflow = "hidden";
+    } else {
+      // Re-enable body scroll when navbar is closed
+      document.body.style.overflow = "auto";
+    }
   });
 });
 
@@ -38,6 +47,9 @@ navbarLinks.forEach(link => {
   link.addEventListener("click", function () {
     navbar.classList.toggle("active");
     overlay.classList.toggle("active");
+
+    // Ensure body scroll is re-enabled when navbar closes
+    document.body.style.overflow = "auto";
   });
 });
 
