@@ -1189,11 +1189,6 @@ textarea:focus {
         padding-block-start: 150px;
     }
 
-    .project-list {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 25px;
-    }
-
     .section-title {
         --fs-3: 3.6rem;
     }
@@ -1206,12 +1201,12 @@ textarea:focus {
     }
 
     .stats-list {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .blog-card {
         display: grid;
-        grid-template-columns: 0.75fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
         padding: 30px;
     }
@@ -1224,6 +1219,11 @@ textarea:focus {
         height: 100%;
     }
 
+    .project-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
     .footer-brand,
     .footer-list:not(:last-child) {
         margin-block-end: 0;
@@ -1231,7 +1231,7 @@ textarea:focus {
 
     .footer-top .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px 50px;
     }
 }
