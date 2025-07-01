@@ -399,7 +399,6 @@ ion-icon {
 }
 
 
-
 /*===> ALL MODALS STYLES (Learn More, Blogs & News,..) <===*/
 .modal {
     position: fixed;
@@ -1186,7 +1185,7 @@ textarea:focus {
     .service .container,
     .blog .container,
     .project .container {
-        padding-block-start: 150px;
+        padding-block-start: 110px;
     }
 
     .section-title {
@@ -1204,6 +1203,11 @@ textarea:focus {
         grid-template-columns: 1fr;
     }
 
+    .project-list {
+        grid-template-columns: 1fr;
+        column-gap: 25px;
+    }
+
     .blog-card {
         display: grid;
         grid-template-columns: 1fr;
@@ -1219,11 +1223,6 @@ textarea:focus {
         height: 100%;
     }
 
-    .project-list {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
     .footer-brand,
     .footer-list:not(:last-child) {
         margin-block-end: 0;
@@ -1237,21 +1236,9 @@ textarea:focus {
 }
 
 /* Tablet (≥ 768px) */
-@media (min-width: 768px) {
+@media (min-width: 720px) {
     .container {
-        max-width: 720px;
-    }
-
-    .stats-list {
-        display: grid;
-        gap: 30px;
-    }
-
-    .about .container,
-    .service .container,
-    .blog .container,
-    .project .container {
-        padding-block-start: 150px;
+        max-width: 768px;
     }
 
     .hero {
@@ -1269,7 +1256,31 @@ textarea:focus {
         gap: 30px;
     }
 
+    .about .container,
+    .service .container,
+    .blog .container,
+    .project .container {
+        padding-block-start: 150px;
+    }
+
+    .stats-list {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        gap: 30px;
+    }
+
+    .blog-card {
+        display: grid;
+        grid-template-columns: 0.75fr 1fr;
+        gap: 20px;
+        padding: 30px;
+    }
+
     .service-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-list {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1288,13 +1299,17 @@ textarea:focus {
         max-width: 950px;
     }
 
-    .stats-list {
+    .about .container {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
+        padding-block-start: 250px;
     }
 
-    .project-list {
-        grid-template-columns: repeat(3, 1fr);
+    .service .container,
+    .blog .container,
+    .project .container {
+        padding-block-start: 150px;
     }
 
     .header {
@@ -1330,20 +1345,24 @@ textarea:focus {
         color: var(--white);
     }
 
-    .about .container {
+    .stats-list {
+        grid-template-columns: repeat(3, 1fr);
         display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 30px;
-        padding-block-start: 250px;
-    }
-
-    .service .container,
-    .blog .container,
-    .project .container {
-        padding-block-start: 150px;
     }
 
     .service-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog-card {
+        display: grid;
+        grid-template-columns: 0.75fr 1fr;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .project-list {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1404,6 +1423,7 @@ textarea:focus {
         grid-column: auto;
     }
 }
+
 
 
 
